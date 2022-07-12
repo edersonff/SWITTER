@@ -5,4 +5,4 @@ module.exports = new Sequelize(env.MYSQL_SCHEMA, env.MYSQL_USER, env.MYSQL_PASS,
     host: env.MYSQL_HOST,
     port: env.MYSQL_PORT,
     dialect: 'mysql'
-})
+});
