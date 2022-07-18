@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Paralucent';
+    src: url(/src/Paralucent\ Text\ W00\ Book.ttf);
+}
+
+* {
+    font-family: 'Paralucent';
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+div {
+    display: flex;
+}
+
+nav {
+    width: 80px;
+    padding: 0px 10px 0px 10px;
+    height: 100vh;
+    background-color: #202225;
+}
+
+nav .S {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #0047B5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 280px;
+    height: 100vh;
+    background-color: #2F3136;
+}
+
+section .header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+section dl {
+    width: 100%;
+    margin: 0px;
+}
+
+section dl dd, section dl dt {
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0047B5;
+    display: flex;
+    align-self: center;
+}
+
+section dl dd span,  section dl dt span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+section .separacao {
+    width: 90%;
+    height: 2px;
+    left: 114px;
+    top: 467px;
+    background: #36393F;
+    margin: 10px;
+}
+
+main {
+    background-color: #36393F;
+    width: 100%;
+    height: 100vh;
+}
