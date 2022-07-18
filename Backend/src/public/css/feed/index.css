@@ -57,22 +57,58 @@ section dl {
     margin: 0px;
 }
 
-section dl dd, section dl dt {
+section dl dd,  section dl dt  {
     color: #fff;
-    margin: 10px;
+    margin: 5px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #0047B5;
     display: flex;
     align-self: center;
+    cursor: pointer;
 }
 
-section dl dd span,  section dl dt span {
+
+section dl dd span, section dl dt {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
 }
+
+section dl dd .rank{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #202225;
+}
+
+section dl dd .perfil{
+    display: grid;
+}
+
+section dl dd .perfil span{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section dl dd .perfil .arroba{
+    font-size: 12px;
+    color: #D9D9D9;
+}
+
+section dl dt{
+    background-color: #202225;
+}
+
+section dl dd:hover{
+    background-color: #0047B5;
+}
+
 
 section .separacao {
     width: 90%;
