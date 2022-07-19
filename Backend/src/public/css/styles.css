@@ -1,0 +1,13 @@
+:root{
+    --main: rgb(26, 26, 26);
+    --second: #202020;
+    --thirty: #3CB7A8;
+}
+a{
+    color:#fff;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
