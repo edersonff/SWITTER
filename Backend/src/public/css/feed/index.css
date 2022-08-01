@@ -19,6 +19,7 @@ div {
 
 nav {
     width: 80px;
+    height: 100vh;
     padding: 0px 10px 0px 10px;
     background-color: #202225;
 }
@@ -34,6 +35,11 @@ nav .S {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+nav .S:hover{
+    background-color: #014fc5;
 }
 
 section {
