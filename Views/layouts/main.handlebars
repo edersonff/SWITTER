@@ -8,14 +8,86 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="/css/feed/index.css">
     <script src="./js/jquery.js"></script>
     {{{_sections.head}}}
 
     <title>{{Page}}</title>
 </head>
 <body>
-    <main>
-        {{{body}}}
-    </main>
+    <div>
+        <nav>
+            <div class="S">S</div>
+
+        </nav>
+
+        <section>
+            <div class="header">Descobrir</div>
+            <dl>
+                <dd>
+                    <span class="material-symbols-outlined">
+                        explore
+                    </span>
+                    <span>Feed</span>
+                </dd>
+                <dd>
+                    <span class="material-symbols-outlined">
+                        notifications
+                    </span>
+                    <span>Notificações</span>
+                </dd>
+                <dd>
+                    <span class="material-symbols-outlined">
+                        groups
+                    </span>
+                    <span>Grupos</span>
+                </dd>
+
+                <dd>
+                    <span class="material-symbols-outlined">
+                        sports_esports
+                    </span>
+                    <span>Games</span>
+                </dd>
+            </dl>
+
+            <div class="separacao"></div>
+
+            <dl>
+                <dt><span>Assuntos do Momento</span></dt>
+                <dd>
+                    <div class="rank">1</div><span>#Russa</span>
+                </dd>
+                <dd>
+                    <div class="rank">2</div><span>#Futsal</span>
+                </dd>
+                <dd>
+                    <div class="rank">3</div><span>#Voleibal</span>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt><span>Sugestões para seguir</span></dt>
+                <dd>
+                    <div class="rank"></div>
+                    <div class="perfil">
+                        <span>Pedrinho</span>
+                        <span class="arroba">@pedrinhozeromeia</span>
+                    </div>
+                </dd>
+
+            </dl>
+        </section>
+        <main>
+            <header>
+                <span>Feed</span>
+            </header>
+
+            <div class="container">
+                {{{body}}}
+            </div>
+
+        </main>
+    </div>
 </body>
 </html>

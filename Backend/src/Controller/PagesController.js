@@ -4,10 +4,10 @@ module.exports = class PagesController{
         res.render('feed');
     }
     static login(req, res){    
-        res.render('login');
+        res.render('login', {});
     }
     static registro(req, res){    
-        res.render('registro');
+        res.render('registro', {});
     }
 
 }
