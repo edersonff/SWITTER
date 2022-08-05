@@ -11,3 +11,179 @@ main{
     height: 100%;
     display: flex;
 }
+
+@font-face {
+    font-family: 'Paralucent';
+    src: url(/src/Paralucent\ Text\ W00\ Book.ttf);
+}
+
+* {
+    font-family: 'Paralucent';
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #36393F;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #202225;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #202225;
+    /* creates padding around scroll thumb */
+}
+
+body {
+    min-height: 100vh;
+    margin: 0px;
+}
+
+.body {
+    display: flex;
+}
+
+nav {
+    width: 80px;
+    padding: 0px 10px 0px 10px;
+    background-color: #202225;
+}
+
+nav .S {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #0047B5;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+nav .S:hover {
+    background-color: #0047B5;
+}
+
+section {
+    width: 280px;
+    background-color: #2F3136;
+}
+
+section .header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+section dl {
+    width: 100%;
+    margin: 0px;
+}
+
+section dl dd,
+section dl dt {
+    color: #fff;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+}
+
+
+section dl dd span,
+section dl dt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .material-symbols-outlined {
+    margin-right: 10px;
+}
+
+section dl dd .rank {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #202225;
+}
+
+section dl dd .perfil {
+    display: grid;
+}
+
+section dl dd .perfil span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+section dl dd .perfil .arroba {
+    font-size: 12px;
+    color: #D9D9D9;
+}
+
+section dl dt {
+    background-color: #202225;
+}
+
+section dl dd:hover {
+    background-color: #202225;
+}
+
+section .separacao {
+    width: 90%;
+    height: 2px;
+    left: 114px;
+    top: 467px;
+    background: #36393F;
+    margin: 10px;
+}
+
+main {
+    background-color: #36393F;
+    width: 100%;
+    height: 100%;
+}
+
+main header {
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    position: relative;
+}
+
+main header span {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+main .container {
+    width: 100%;
+    height: 100vh;
+    background-color: #36393F;
+}
