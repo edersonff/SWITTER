@@ -1,0 +1,52 @@
+main .momentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: #ffffff;
+}
+
+main .area {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  padding-left: 75px;
+}
+
+main .area .titulo {
+  padding: 25px 0 15px 0px;
+  font-size: 21px;
+}
+
+main .area .topico-area {
+  display: grid;
+  width: calc(100% - 150px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-content: space-between;
+  grid-row-gap: 10px;
+}
+
+main .area .topico-item {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 16px;
+  gap: 10px;
+}
+
+main .area .topico-item-numero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2F3136;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+main .area .topico-item-texto {
+  color: #ffffff;
+}

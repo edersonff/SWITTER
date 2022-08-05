@@ -10,6 +10,9 @@ module.exports = class PagesController{
         res.render('registro', {layout: ''});
     }
     static notificacoes(req, res) {
-        res.render('notificacoes', {})
+        res.render('notificacoes', {});
+    }
+    static momentos(req, res) {
+        res.render('momentos', {});
     }
 }
