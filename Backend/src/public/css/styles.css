@@ -24,6 +24,7 @@ main{
 
 body::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
     /* width of the entire scrollbar */
 }
 
@@ -33,6 +34,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
+
     background-color: #202225;
     /* color of the scroll thumb */
     border-radius: 20px;
