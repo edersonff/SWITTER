@@ -15,4 +15,8 @@ module.exports = class PagesController{
     static momentos(req, res) {
         res.render('momentos', {});
     }
+
+    static grupos(req, res) {
+        res.render('grupos', {});
+    }
 }
