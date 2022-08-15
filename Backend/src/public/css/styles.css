@@ -82,6 +82,10 @@ nav .S:hover {
     background-color: #0047B5;
 }
 
+section a{
+    width: 100%;
+}
+
 section {
     width: 220px;
     background-color: #2F3136;
