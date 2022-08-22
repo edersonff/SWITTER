@@ -8,6 +8,7 @@ router.get('/registro', PagesController.registro);
 router.get('/notificacoes', PagesController.notificacoes);
 router.get('/momentos', PagesController.momentos);
 router.get('/grupos', PagesController.grupos);
+router.get('/grupo', PagesController.grupo);
 router.get('/games', PagesController.games);
 
 

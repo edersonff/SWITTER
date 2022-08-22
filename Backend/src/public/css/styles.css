@@ -28,18 +28,18 @@ main {
     box-sizing: border-box;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 5px;
     height: 5px;
     /* width of the entire scrollbar */
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background: #36393F;
     /* color of the tracking area */
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
 
     background-color: #202225;
     /* color of the scroll thumb */
@@ -50,7 +50,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-    min-height: 100vh;
     margin: 0px;
 }
 
@@ -82,7 +81,7 @@ nav .S:hover {
     background-color: #0047B5;
 }
 
-section a{
+section a {
     width: 100%;
 }
 
@@ -197,6 +196,6 @@ main header span {
 
 main .container {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 60px);
     background-color: #36393F;
 }

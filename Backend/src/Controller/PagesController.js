@@ -20,6 +20,10 @@ module.exports = class PagesController {
         res.render('grupos', {});
     }
 
+    static grupo(req, res) {
+        res.render('grupo', {});
+    }
+
     static games(req, res) {
         res.render('games', {});
     }
