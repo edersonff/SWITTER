@@ -63,7 +63,7 @@ nav {
     background-color: #202225;
 }
 
-nav .S {
+nav .S, nav .logout {
     width: 50px;
     height: 50px;
     font-size: 25px;
@@ -75,6 +75,13 @@ nav .S {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+nav .logout{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    background-color: #2F3136;
 }
 
 nav .S:hover {
