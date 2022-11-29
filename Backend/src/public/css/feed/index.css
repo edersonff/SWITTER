@@ -162,3 +162,9 @@ main .container .usuario .reacoes .comportamentos .material-symbols-outlined{
 main .container .usuario .reacoes .comportamentos .material-symbols-outlined:hover{
     background-color: #2F3136;
 }
+
+#feed-mensagem-area {
+    overflow-y: scroll;
+    height: calc(100vh - 200px);
+    padding: 4px;
+}

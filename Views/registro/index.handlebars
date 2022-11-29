@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="/css/registro/index.css">
     <script src="./js/jquery.js"></script>
+    <script src="./js/api.js"></script>
 
     <title>Registro</title>
 </head>
@@ -26,30 +27,32 @@
         </header>
 
         <main>
-            <form action="">
+            <div action="">
                 <label for="">
                     <p>EMAIL</p>
-                    <input type="text">
+                    <input id="email" type="text">
                 </label>
 
                 <label for="">
                     <p>NOME DE USUÁRIO</p>
-                    <input type="text">
+                    <input id="nome" type="text">
                 </label>
 
                 <label for="">
                     <p>SENHA</p>
-                    <input class="senha" type="password">
+                    <input id="senha" class="senha" type="password">
                 </label>
 
                 <label for="" class="termos">
-                    <input class="checkbox" type="checkbox">
+                    <input id="checkbox" class="checkbox" type="checkbox">
                     <p>Li e concordo com o termo de serviço do SWITTER.</p>
                 </label>
         
                 <label for="" class="entrar">
-                    <button>Entrar</button>
-                    <p>Precisando de uma conta? Registre-se</p>
+                    <button onclick="cadastrar()">Entrar</button>
+                    <p>
+                        <a href="/login">Já tem uma conta? Faça Login clicando aqui!</a>
+                    </p>
                 </label>
         
             </form>
