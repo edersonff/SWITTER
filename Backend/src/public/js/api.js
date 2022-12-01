@@ -77,9 +77,7 @@ function cadastrar() {
     return;
   }
 
-  if (body.email.split('@')[1] !== 'gmail.com') {
-    alert('Use um email válido!');
-  }
+ 
 
   api('/api/usuario/', 'POST', body)
     .then(data => {
