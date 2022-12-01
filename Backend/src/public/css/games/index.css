@@ -1,0 +1,75 @@
+.grupos {
+height: 100%;
+padding: 20px;
+}
+
+.titulo {
+font-size: 25px;
+color: #fff;
+}
+
+.grupos-abertos {
+display: flex;
+flex-wrap: wrap;
+}
+
+.grupos-abertos .grupo {
+width: 30%;
+height: 100%;
+border-radius: 5px;
+background-color: #2F3136;
+padding: 15px;
+margin: 5px;
+}
+
+.grupos-abertos .grupo .titulo-grupo {
+color: #fff;
+font-size: 18px;
+margin-bottom: 5px;
+}
+
+.grupos-abertos .grupo .descricao {
+color: #D9D9D9;
+height: 110px;
+display: inline-block;
+overflow: hidden;
+text-overflow: ellipsis;
+direction: ltr;
+}
+
+.grupos-abertos .grupo .informacoes {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 10px;
+}
+
+.grupos-abertos .grupo .participantes {
+color: #fff;
+}
+
+.grupos-abertos .grupo .entrar {
+width: 40px;
+height: 40px;
+border-radius: 50px;
+background-color: var(--pri);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.grupos-abertos .grupo .entrar .material-symbols-outlined {
+color: var(--fif);
+}
+
+@media (max-width: 1100px) {
+.grupos-abertos .grupo {
+width: 47%;
+}
+}
+
+@media (max-width: 750px) {
+.grupos-abertos .grupo {
+width: 100%;
+}
+}

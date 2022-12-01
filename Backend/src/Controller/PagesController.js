@@ -1,13 +1,36 @@
-module.exports = class PagesController{
+module.exports = class PagesController {
 
-    static home(req, res){    
-        res.render('feed');
+    static home(req, res) {
+
+
+            res.render('feed', {
+         
+            });
+   
+
     }
-    static login(req, res){    
-        res.render('login', {layout: ''});
+    static login(req, res) {
+        res.render('login', { layout: '' });
     }
-    static registro(req, res){    
-        res.render('registro', {layout: ''});
+    static registro(req, res) {
+        res.render('registro', { layout: '' });
+    }
+    static notificacoes(req, res) {
+        res.render('notificacoes', {});
+    }
+    static momentos(req, res) {
+        res.render('momentos', {});
     }
 
+    static grupos(req, res) {
+        res.render('grupos', {});
+    }
+
+    static grupo(req, res) {
+        res.render('grupo', {});
+    }
+
+    static games(req, res) {
+        res.render('games', {});
+    }
 }

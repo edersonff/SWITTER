@@ -24,7 +24,7 @@ html {
 
 body {
     margin: 0;
-    min-height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px) !important;
 }
 
 main {
@@ -197,7 +197,7 @@ template {
 
 nav.navbar,
 section {
-    width: 100%;
+    /* width: 100%; */
 }
 
 input {

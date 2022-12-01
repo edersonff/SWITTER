@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,67 +10,92 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="/css/feed/index.css">
-    <script src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="/css/notificacoes/index.css">
+    <link rel="stylesheet" href="/css/momentos/index.css">
+    <link rel="stylesheet" href="/css/grupos/index.css">
+    <link rel="stylesheet" href="/css/grupo/index.css">
+    <link rel="stylesheet" href="/css/games/index.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/api.js"></script>
     {{{_sections.head}}}
 
     <title>{{Page}}</title>
 </head>
+
 <body>
     <div class="body">
         <nav>
             <div class="S">S</div>
-
+            <div class="logout" onclick="logout()">
+                <span class="material-symbols-outlined">
+                    logout
+                </span>
+            </div>
         </nav>
 
         <section>
             <div class="header">Descobrir</div>
             <dl>
-                <dd>
-                    <span class="material-symbols-outlined">
-                        explore
-                    </span>
-                    <span>Feed</span>
-                </dd>
-                <dd>
-                    <span class="material-symbols-outlined">
-                        notifications
-                    </span>
-                    <span>Notificações</span>
-                </dd>
-                <dd>
-                    <span class="material-symbols-outlined">
-                        groups
-                    </span>
-                    <span>Grupos</span>
-                </dd>
+                <a href="/">
+                    <dd>
+                        <span class="material-symbols-outlined">
+                            explore
+                        </span>
+                        <span>Feed</span>
+                    </dd>
+                </a>
 
-                <dd>
-                    <span class="material-symbols-outlined">
-                        sports_esports
-                    </span>
-                    <span>Games</span>
-                </dd>
+                <a href="/notificacoes">
+                    <dd>
+                        <span class="material-symbols-outlined">
+                            notifications
+                        </span>
+                        <span>Notificações</span>
+                    </dd>
+                </a>
+
+                <a href="/grupos">
+                    <dd>
+                        <span class="material-symbols-outlined">
+                            groups
+                        </span>
+                        <span>Grupos</span>
+                    </dd>
+                </a>
+
+                <a href="/games">
+                    <dd>
+                        <span class="material-symbols-outlined">
+                            sports_esports
+                        </span>
+                        <span>Games</span>
+                    </dd>
+                </a>
+
             </dl>
 
             <div class="separacao"></div>
 
             <dl>
-                <dt><span>Assuntos do Momento</span></dt>
-                <dd>
-                    <div class="rank">1</div><span>#Russa</span>
-                </dd>
-                <dd>
-                    <div class="rank">2</div><span>#Futsal</span>
-                </dd>
-                <dd>
-                    <div class="rank">3</div><span>#Voleibal</span>
-                </dd>
+                <a href="/momentos">
+
+                    <dt><span>Assuntos do Momento</span></dt>
+                    <dd>
+                        <div class="rank">1</div><span>#Russa</span>
+                    </dd>
+                    <dd>
+                        <div class="rank">2</div><span>#Futsal</span>
+                    </dd>
+                    <dd>
+                        <div class="rank">3</div><span>#Voleibal</span>
+                    </dd>
+                </a>
             </dl>
 
             <dl>
                 <dt><span>Sugestões para seguir</span></dt>
                 <dd>
-                    <div class="rank"></div>
+                    <img class="rank" src="https://avatars.githubusercontent.com/u/97001424?v=4" alt="">
                     <div class="perfil">
                         <span>Pedrinho</span>
                         <span class="arroba">@pedrinhozeromeia</span>
@@ -77,6 +103,7 @@
                 </dd>
 
             </dl>
+
         </section>
         <main>
             <header>
@@ -85,9 +112,66 @@
 
             <div class="container">
                 {{{body}}}
+
+                <div class="amigos">
+                    <div class="amigos-online">Amigos Online <div></div>
+                    </div>
+
+
+                    <div class="perfil">
+                        <img class="foto" src="https://avatars.githubusercontent.com/u/97001424?v=4" alt="">
+                        <div class="nome">
+                            <span class="nome">Pedrinho</span>
+                            <span class="arroba">@pedrinhozeromeia</span>
+                        </div>
+                    </div>
+
+                    <div class="perfil">
+                        <img class="foto" src="https://avatars.githubusercontent.com/u/97001424?v=4" alt="">
+                        <div class="nome">
+                            <span class="nome">Pedrinho</span>
+                            <span class="arroba">@pedrinhozeromeia</span>
+                        </div>
+                    </div>
+
+                    <div class="perfil">
+                        <img class="foto" src="https://avatars.githubusercontent.com/u/97001424?v=4" alt="">
+                        <div class="nome">
+                            <span class="nome">Pedrinho</span>
+                            <span class="arroba">@pedrinhozeromeia</span>
+                        </div>
+                    </div>
+
+                    <div class="perfil">
+                        <img class="foto" src="https://avatars.githubusercontent.com/u/97001424?v=4" alt="">
+                        <div class="nome">
+                            <span class="nome">Pedrinho</span>
+                            <span class="arroba">@pedrinhozeromeia</span>
+                        </div>
+                    </div>
+
+                    <div class="grupo-dentro">Grupos <div></div>
+                    </div>
+
+                    <div class="grupo-entrar">
+                        <img class="foto" src="https://avatars.githubusercontent.com/u/97001424?v=4" alt="">
+                        <div class="nome">
+                            <span class="nome">cpxcorporation</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
 
+
         </main>
+
+
     </div>
+
+
 </body>
+
 </html>

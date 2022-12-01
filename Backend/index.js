@@ -23,8 +23,8 @@ app.set('views', '../Views');
 
 var hbs = handlebars.create({});
 
-hbs.handlebars.registerHelper('section', function(name, options){
-    if(!this._sections) this._sections = {};
+hbs.handlebars.registerHelper('section', function (name, options) {
+    if (!this._sections) this._sections = {};
     this._sections[name] = options.fn(this);
     return null;
 })
